@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jimmy's Burger</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="/jimmys burger/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+  
+</head> 
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-padding w3-card" id="navbar">
+    
+    <a href="#home" class="w3-bar-item w3-button">Jimmy's Burger</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small" >
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#mapnav" class="w3-bar-item w3-button">Map</a>
+    </div>
+  </div>
+</div>
+
+<!-- go up button -->
+
+<a href="#menu" class="to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- Social -->
+<div class="social">
+  <a href="#">Facebook <i class="fab fa-facebook"></i></a>
+  <a href="#">Tiktok <i class="fab fa-tiktok fa-2x"></i></i></a>
+  <a href="https://www.instagram.com/jimmysburgergerlingen/">Instagram <i class="fab fa-instagram"></i></a>
+  <a href="https://www.tripadvisor.de/Restaurant_Review-g562765-d21258515-Reviews-Jimmy_s_Burger-Gerlingen_Baden_Wurttemberg.html">Tripadvisor <i class="fab fa-tripadvisor"></i></a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;" id="home">
+  <img class="w3-image" src="jimmys burger/mainburger4.jpg" alt="Hamburger" width="1600" height="auto">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxxlarge" style="color: white;">jimmy's Burger</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+  
+  <div class="container">
+    <!-- bestellung button gerlingen -->
+    <div class="bestellung-button-container">
+      <button id="bestellung-button-gerlingen" onclick="redirectToURL('https://www.lieferando.de/speisekarte/jimmys-burger-1')">
+        <img src="https://assets.takeaway.com/consumer-web/images/lieferando-brand.06ee84e9.svg" alt="logo">
+        <p>GERLİNGEN</p>
+        <p>Jetzt Bestellt!!!</p>
+      </button>
+    </div>
+  
+    <!-- bestellung button leonberg -->
+    <div class="bestellung-button-container">
+      <button id="bestellung-button-leonberg" onclick="redirectToURL('https://www.lieferando.de/speisekarte/jimmys-burger-leonberg')">
+        <img src="https://assets.takeaway.com/consumer-web/images/lieferando-brand.06ee84e9.svg" alt="logo">
+        <p>LEONBERG</p>
+        <p>Jetzt Bestellt!!!</p>
+      </button>
+    </div>
+  </div>
+  
+  
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-center w3-col m6 w3-padding-large w3-hide-small">
+     <img src="jimmys burger/logojimmysburger2.jpg" alt="Table Setting" width="100%" height="auto">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Jimmy's Burger</h1><br>
+      <h5 class="w3-center"></h5>
+      <p class="w3-medium">Jimmy's Burger ist ein modernes Burger-Restaurant mit einer Inneneinrichtung im Stil des Wilden Westens, das Aufmerksamkeit erregt. Das erste Jimmy's Burger Restaurant befindet sich in Gerlingen, in der Nähe von Stuttgart, und es gibt auch eine Filiale in Leonberg.
+
+        Jimmy's Burger bietet eine Vielzahl von Optionen auf ihrer Speisekarte und sticht durch ihre Einzigartigkeit hervor. Die Speisekarte umfasst verschiedene Optionen wie den speziellen Burger namens Jimmy's Burger, Balkan-Burger, amerikanische Burger, Lachs-Burger und vegetarische Burger.
+        
+        Das Restaurant bereitet alle Produkte frisch und mit natürlichen Zutaten zu. Sorgfältig ausgewählte Zutaten wie speziell hergestellte Brötchen und Rindfleisch bilden die Grundlage für köstliche Burger.
+        
+        Mit seiner Dekoration im Wilden-Westen-Stil bietet das Jimmy's Burger Restaurant eine warme Atmosphäre. Jimmy's Burger zielt darauf ab, seinen Gästen schnellen und freundlichen Service zu bieten. Köstliche Mahlzeiten, Burger-Variationen, die in der Region nicht zu finden sind, und innovative Geschmacksrichtungen sorgen für ein unvergessliches Erlebnis für die Kunden.
+        
+        Jedoch wird Jimmy's Burger von einem erfahrenen und kompetenten Team geleitet und bietet seinen Kunden ein hochwertiges und professionelles Erlebnis. Jimmy's Burger ist das bekannteste und traditionsreichste Hamburger-Restaurant in Gerlingen. Laden Sie Ihre Kunden ein, köstliche Burger bei Jimmy's Burger zu genießen und erleben Sie einen unvergesslichen Geschmack mit einzigartigen Aromen, die sie nirgendwo anders finden werden.</p>
+      
+    </div>
+  </div>
+  
+  <hr>
+  <!-- map -->
+  <div class="mapcontainer">
+    <h1 id="mapnav">Lage des Restaurants</h1>
+    <iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10512.304483620208!2d9.0633516!3d48.7995258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799d960bfa88e03%3A0x2398bfed261db3b0!2sJimmy%C2%B4s%20Burger!5e0!3m2!1str!2sde!4v1685713202148!5m2!1str!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+
+
+ 
+  
+  <!-- Menu Section -->
+  <div class="w3-row">
+    <div class="w3-col">
+      <h1 class="w3-center" id="menu">Speisekarte</h1><br>
+
+        <!-- menunav -->
+      <div class="menunav">
+        <div class="w3-center">
+          <a href="#Belibt" class="w3-bar-item w3-button">Belibt 
+            <span></span> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#Salate" class="w3-bar-item w3-button">Salate
+            <span></span> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#Burger" class="w3-bar-item w3-button">Burger
+            <span></span> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#Vegetarische-burger" class="w3-bar-item w3-button">Vegetarische Burger 
+            <span></span> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#Fingerfood" class="w3-bar-item w3-button">Fingerfood  
+            <span></span> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span></a>
+          <a href="#Alkoholfreie-getränke" class="w3-bar-item w3-button">Alkoholfreie Getränke
+            <span></span> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#Alkoholische-getränke" class="w3-bar-item w3-button">Alkoholische Getränke
+            <span></span> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </div>
+
+      <h2 id="Beliebt">Beliebt</h2>
+      <br>
+
+      <div class="menu-item">
+        <div class="item-image">
+          <img src="jimmys burger/cheesemainreal.jpg" alt="Cheese Burger">
+        </div>
+        <div class="item-details">
+          <h4>Cheese Burger</h4>
+          <p class="item-description">mit hausgemachtem Patty, Jimmys Sauce nach Art des Hauses, Cheddar, Tomaten, Essiggurken und roten Zwiebeln
+            </p>
+          <p class="item-options">
+            Wahl aus: 120g-Patty oder 200g-Patty.
+          </p>
+          <p class="item-price">6,80 €</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-image">
+          <img src="jimmys burger/Pommes.jpg" alt="Süßkartoffeln">
+        </div>
+        <div class="item-details">
+          <h4>Süßkartoffeln</h4>
+          <p class="item-price">4,50 €</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-image">
+          <img src="jimmys burger/americanburger.jpg" alt="American Burger">
+        </div>
+        <div class="item-details">
+          <h4>American Burger</h4>
+          <p class="item-description">mit hausgemachtem Patty, Jimmys Sauce nach Art des Hauses, Beef Bacon, Ei, Tomaten, Essiggurken, Cheddar und roten Zwiebeln</p>
+          <p class="item-options">
+            Wahl aus: 120g-Patty oder 200g-Patty.
+          </p>
+          <p class="item-price">8,90 €</p>
+        </div>
+      </div>
+      <br>
+
+      <h2 id="Salate">Salate</h2>
+      <br><br>
+
+      
+      
+       <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/sezarsalat.jpg" alt="Roma Salat">
+          </div>
+          <div class="item-details">
+            <h4>Roma Salat</h4>
+            <p class="item-description">mit gegrillten Hähnchenbruststreifen</p>
+            <p class="item-options">
+              Wahl aus: mit Apfel-Balsamico-Dressing, hausgemacht, mit French-Dressing oder ohne Dressing.
+            </p>
+            <p class="item-price">7.90 €</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/athensalat.jpg" alt="Athen Salat">
+          </div>
+          <div class="item-details">
+            <h4>Athen Salat</h4>
+            <p class="item-description">mit Oliven und Schafskäse</p>
+            <p class="item-options">
+              Wahl aus: mit Apfel-Balsamico-Dressing, hausgemacht, mit French-Dressing oder ohne Dressing.
+            </p>
+            <p class="item-price">7.90 €</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/tunasalatreal.jfif" alt="Tuna Salat">
+          </div>
+          <div class="item-details">
+            <h4>Tuna Salat</h4>
+            <p class="item-description">mit roten Zwiebeln und Thunfisch</p>
+            <p class="item-options">
+              Wahl aus: mit Apfel-Balsamico-Dressing, hausgemacht, mit French-Dressing oder ohne Dressing.
+            </p>
+            <p class="item-price">7.90 €</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/falafel.jpg" alt="Arrabica Salat">
+          </div>
+          <div class="item-details">
+            <h4>Arrabica Salat</h4>
+            <p class="item-description">mit Falafel und Zwiebeln</p>
+            <p class="item-options">
+              Wahl aus: mit Apfel-Balsamico-Dressing, hausgemacht, mit French-Dressing oder ohne Dressing.
+            </p>
+            <p class="item-price">7.90 €</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/avocado-salad.jpg" alt="Vital Salat">
+          </div>
+          <div class="item-details">
+            <h4>Vital Salat</h4>
+            <p class="item-description">gemischter Salat mit Avocado und Salatkerne-Mix</p>
+            <p class="item-options">
+              Wahl aus: mit Apfel-Balsamico-Dressing, hausgemacht, mit French-Dressing oder ohne Dressing.
+            </p>
+            <p class="item-price">7.90 €</p>
+          </div>
+        </div>
+        <br>
+
+        <h2 id="Burger">Burger</h2>
+        <br><br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/classicburger.jpg" alt="Classic Burger">
+          </div>
+          <div class="item-details">
+            <h4>Classic Burger</h4>
+            <p class="item-description">mit hausgemachtem Patty, Jimmys Sauce nach Art des Hauses, Tomaten, Essiggurken und roten Zwiebeln</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">6.30 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/cheesemainreal.jpg" alt="Cheeseburger">
+          </div>
+          <div class="item-details">
+            <h4>Cheeseburger</h4>
+            <p class="item-description">mit hausgemachtem Patty, Jimmys Sauce nach Art des Hauses, Cheddar, Tomaten, Essiggurken und roten Zwiebeln</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">6,80 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/chickenburgermainreal.jpg" alt="Chickenburger">
+          </div>
+          <div class="item-details">
+            <h4>Chickenburger</h4>
+            <p class="item-description">mit Jimmys Sauce nach Art des Hauses, Rucola, Tomaten und roten Zwiebeln</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">6,50 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/crispychickenburger.jpg" alt="Crispy Chicken Burger">
+          </div>
+          <div class="item-details">
+            <h4>Crispy Chicken Burger</h4>
+            <p class="item-description">mit panierter Hähnchenbrust, Salat, Tomaten, roten Zwiebeln, Essiggurken, Rucola und Jimmy's Sauce</p>
+            <p class="item-options">
+              Wahl aus: Klein oder Groß.
+            </p>
+            <p class="item-price">6.50 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/eggburger.jpg" alt="Egg Burger">
+          </div>
+          <div class="item-details">
+            <h4>Egg Burger</h4>
+            <p class="item-description">mit hausgemachtem Patty, Jimmys Sauce nach Art des Hauses, Ei, Cheddar, Tomaten, Essiggurken und roten Zwiebeln</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">7,80 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/balkanburger.jfif" alt="Balkan Burger">
+          </div>
+          <div class="item-details">
+            <h4>Balkan Burger</h4>
+            <p class="item-description">mit hausgemachtem Patty, gegrillter roter Paprika, hausgemachter Ajvarsauce und roten Zwiebeln</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">6.80 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/ananasburgercrop.jpg" alt="Hawaii Burger">
+          </div>
+          <div class="item-details">
+            <h4>Hawaii Burger</h4>
+            <p class="item-description">mit hausgemachtem Patty, gegrillter Ananas, Rucola, hausgemachter Avocadosauce und Cheddar</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">7,30 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/americanburger.jpg" alt="American Burger">
+          </div>
+          <div class="item-details">
+            <h4>American Burger</h4>
+            <p class="item-description">mit hausgemachtem Patty, Jimmys Sauce nach Art des Hauses, Beef Bacon, Ei, Tomaten, Essiggurken, Cheddar und roten Zwiebeln</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">8,90 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/texasburger.jfif" alt="Texas Barbecue Burger">
+          </div>
+          <div class="item-details">
+            <h4>Texas Barbecue Burger</h4>
+            <p class="item-description">mit hausgemachtem Patty, Beef Bacon, Barbecuesauce, Tomaten, Essiggurken, roten Zwiebeln und Cheddar</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">8,30 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/maxicanburger.jfif" alt="Mexican Burger">
+          </div>
+          <div class="item-details">
+            <h4>Mexican Burger</h4>
+            <p class="item-description">mit hausgemachtem Patty, Rucola, Jalapenos und gehacktem Chili, Tomaten, Essiggurken, Rucola und roten Zwiebeln</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">6,80 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/jimmyburger.jpg" alt="Jimmys Burger Burger">
+          </div>
+          <div class="item-details">
+            <h4>Jimmys Burger Burger</h4>
+            <p class="item-description">mit hausgemachtem Patty, Beef Bacon, gegrilltem Gemüse, Rucola, Tomaten, Essiggurken und roten Zwiebeln</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">8,30 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/blackburger.jfif" alt="Black Burger">
+          </div>
+          <div class="item-details">
+            <h4>Black Burger</h4>
+            <p class="item-description">mit hausgemachtem Patty, Cheddar, Salat, Champignons, Jimmy's Sauce nach Art des Hauses und Knoblauch</p>
+            <p class="item-options">
+              Wahl aus: Klein oder Groß.
+            </p>
+            <p class="item-price">8,90 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/beefteller.jfif" alt="Naked - Burger (Beef Burgerteller)">
+          </div>
+          <div class="item-details">
+            <h4>Naked - Burger (Beef Burgerteller)</h4>
+            <p class="item-description">2 Fleisch Patties (240 gr.) mit einer Portion Pommes und Beilagensalat. (Ohne Brot)</p>
+            <p class="item-options">
+             
+            </p>
+            <p class="item-price">12,90 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/chickenplate.jfif" alt="Naked - Burger (Chicken Burgerteller)">
+          </div>
+          <div class="item-details">
+            <h4>Naked - Burger (Chicken Burgerteller)</h4>
+            <p class="item-description">2 Hähnchen Patties (240 gr.) gegrillt mit einer Portion Pommes und Beilagensalat. (Ohne Brot)</p>
+            <p class="item-options">
+              
+            </p>
+            <p class="item-price">12,90 €</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/crispychickenplate.jfif" alt="Naked - Burger (Crispy Chicken Burgerteller)">
+          </div>
+          <div class="item-details">
+            <h4>Naked - Burger (Crispy Chicken Burgerteller)</h4>
+            <p class="item-description">2 Hähnchen Patties (ca. 240 gr.) paniert mit einer Portion Pommes und Beilagensalat. (Ohne Brot)</p>
+            <p class="item-options">
+              
+            </p>
+            <p class="item-price">12,90 €</p>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <h2 id="Vegetarische-burger">Vegetarische Burger</h2>
+        <br><br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/halloi.jpg" alt="Halloumi Burger (vegetarisch)">
+          </div>
+          <div class="item-details">
+            <h4>Halloumi Burger (vegetarisch)</h4>
+            <p class="item-description">mit gegrilltem Halloumi, Jimmys Sauce nach Art des Hauses, Rucola, Gurken und Karotten</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">6.30 €</p>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/" alt="Veggie Burger (vegetarisch)">
+          </div>
+          <div class="item-details">
+            <h4>Veggie Burger (vegetarisch)</h4>
+            <p class="item-description">mit hausgemachtem Gemüse-Patty, Jimmys Sauce nach Art des Hauses, Rucola, Gurken und Karotten</p>
+            <p class="item-options">
+              Wahl aus: 120g-Patty oder 200g-Patty.
+            </p>
+            <p class="item-price">6.00 €</p>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h2 id="Fingerfood">Fingerfood</h2>
+        <br><br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/Süßkart.jpg" alt="Pommes frites">
+          </div>
+          <div class="item-details">
+            <h4>Pommes frites</h4>
+            <p class="item-description"></p>
+            <p class="item-options">
+              
+            </p>
+            <p class="item-price">3.50 €</p>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/Pommes.jpg" alt="Süßkartoffeln">
+          </div>
+          <div class="item-details">
+            <h4>Süßkartoffeln</h4>
+            <p class="item-description"></p>
+            <p class="item-options">
+              
+            </p>
+            <p class="item-price">3.50 €</p>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/elmadilimipato.jfif" alt="Hausgemachte Wildkartoffeln">
+          </div>
+          <div class="item-details">
+            <h4>Hausgemachte Wildkartoffeln</h4>
+            <p class="item-description"></p>
+            <p class="item-options">
+              
+            </p>
+            <p class="item-price">4.00 €</p>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/Chicken Nuggets (7 Stück).jpg" alt="Chicken Nuggets (7 Stück)">
+          </div>
+          <div class="item-details">
+            <h4>Chicken Nuggets (7 Stück)</h4>
+            <p class="item-description"></p>
+            <p class="item-options">
+              mit Pommes frite
+            </p>
+            <p class="item-price">8.50 €</p>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/Chicken Wings.jpg" alt="Chicken Wings (7 Stück)">
+          </div>
+          <div class="item-details">
+            <h4>Chicken Wings (7 Stück)</h4>
+            <p class="item-description"></p>
+            <p class="item-options">
+              mit Pommes frite
+            </p>
+            <p class="item-price">8.50 €</p>
+          </div>
+        </div>
+        <br><br>
+
+        <h2 id="Alkoholfreie-getränke">Alkoholfreie Getränke</h2>
+        <br><br>
+
+       
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/cococola.jpg" alt="Coca-Cola 0,33l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Coca-Cola 0,33l (MEHRWEG)</h4>
+            <p class="item-description">Coca-Cola steht für einzigartigen Geschmack, Erfrischung und Momente voller Lebensfreude. Die 0,33l Glas-Mehrwegflasche ist unsere Ikone für perfekten Trinkgenuss seit 1886.</p>
+            <p class="item-options">
+              Wahl aus: 0.33 L oder 1 L 
+            </p>
+            <p class="item-price">2.80 €</p>
+          </div>
+        </div>
+        <br><br>
+
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/kolazerp.jpg" alt="Coca-Cola Zero 0,33l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Coca-Cola Zero 0,33l (MEHRWEG)</h4>
+            <p class="item-description">Keine Kalorien. Null Zucker. Für alle Coke Liebhaber, die beim Geschmack keinen Kompromiss eingehen wollen.</p>
+            <p class="item-options">
+              Wahl aus: 0.33 L oder 1 L 
+            </p>
+            <p class="item-price">2.80 €</p>
+          </div>
+        </div>
+        <br><br>
+
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/fanta.jpg" alt="Fanta Orange 0,33l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Fanta Orange 0,33l (MEHRWEG)</h4>
+            <p class="item-description">Trinke Fanta. Lebe bunter. Spritzig erfrischend begleitet die originale Fanta Orange jede Lebenssituation und macht jetzt noch mehr Spaß.</p>
+            <p class="item-options">
+              Wahl aus: 0.33 L oder 1 L 
+            </p>
+            <p class="item-price">2.80 €</p>
+          </div>
+        </div>
+        <br><br>
+
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/sprite.jpg" alt="Sprite 0,33l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Sprite 0,33l (MEHRWEG)</h4>
+            <p class="item-description">Bist du bereit für Sprite? Die einzigartige Formel aus grünen Limetten und sonnengelben Zitronen erfrischt dich maximal.</p>
+            <p class="item-options">
+              Wahl aus: 0.33 L oder 1 L
+            </p>
+            <p class="item-price">2.80 €</p>
+          </div>
+        </div>
+        <br><br>
+
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/mezzo.JPG" alt="Mezzo Mix 0,33l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Mezzo Mix 0,33l (MEHRWEG)</h4>
+            <p class="item-description">Mixt euch eine gute Zeit mit mezzo mix, dem erfrischend-leckeren Kuss aus Cola und Orange.</p>
+            <p class="item-options">
+              Wahl aus: 0.33 L oder 1 L
+            </p>
+            <p class="item-price">2.80 €</p>
+          </div>
+        </div>
+        <br><br>
+
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/fritzcola.jpg" alt="Fritz Kola 0,33l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Fritz Kola 0,33l (MEHRWEG)</h4>
+            <p class="item-description"></p>
+            <p class="item-options">
+              
+            </p>
+            <p class="item-price">2.80 €</p>
+          </div>
+        </div>
+        <br><br>
+
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img src="jimmys burger/" alt="Wasser 0,5l (EINWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Wasser 0,5l (EINWEG)</h4>
+            <p class="item-description"></p>
+            <p class="item-options">
+              Wahl aus: tilles oder mit kohlensäure
+            </p>
+            <p class="item-price">2.20 €</p>
+          </div>
+        </div>
+        <br><br>
+
+
+        <h2 id="Alkoholische-getränke">Alkoholische Getränke</h2>
+        <br><br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/corona.jpg" alt="Corona 0,33l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Corona 0,33l (MEHRWEG)</h4>
+            <p class="item-description">+18</p>
+            <p class="item-options">
+              4,5% vol, inkl. Pfand (0,08 €), 11,96 €/l, 330ml
+            </p>
+            <p class="item-price">4.00 €</p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/Desperados.jpg" alt="Desperados 0,33l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Desperados 0,33l (MEHRWEG)</h4>
+            <p class="item-description">+18</p>
+            <p class="item-options">
+              5,9% vol, inkl. Pfand (0,08 €), 11,96 €/l, 330ml
+            </p>
+            <p class="item-price">4.00 €</p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/Hefeweizen bier.jfif" alt="Hefeweizen 0,5l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Hefeweizen 0,5l (MEHRWEG)</h4>
+            <p class="item-description">+18</p>
+            <p class="item-options">
+              5,0% vol, inkl. Pfand (0,08 €), 6,92 €/l, 500ml
+            </p>
+            <p class="item-price">3,50 €</p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;"  src="jimmys burger/Stuttgarter Hofbräu.jpg" alt="Stuttgarter Hofbräu 0,5l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Stuttgarter Hofbräu 0,5l (MEHRWEG)</h4>
+            <p class="item-description">+18</p>
+            <p class="item-options">
+              4,8% vol, inkl. Pfand (0,08 €), 6,52 €/l, 500ml
+            </p>
+            <p class="item-price">3,30 €</p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/kristal.JPG" alt="Kristall Weizen 0,5l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Kristall Weizen 0,5l (MEHRWEG)</h4>
+            <p class="item-description">+18</p>
+            <p class="item-options">
+              4,9% vol, inkl. Pfand (0,08 €), 6,92 €/l, 500ml
+            </p>
+            <p class="item-price">3,50 €</p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="menu-item">
+          <div class="item-image">
+            <img style="height: 300px; width: auto;" src="jimmys burger/radleer.JPG" alt="Radler 0,33l (MEHRWEG)">
+          </div>
+          <div class="item-details">
+            <h4>Radler 0,33l (MEHRWEG)</h4>
+            <p class="item-description">+18</p>
+            <p class="item-options">
+              2,5% vol, inkl. Pfand (0,08 €), 6,52 €/l, 500ml
+            </p>
+            <p class="item-price">3,30 €</p>
+          </div>
+        </div>
+        <br><br>
+         
+      
+          
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      
+    </div>
+  </div>
+
+  <hr>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-64 w3-light-grey" id="contact">
+  <h1>Contact</h1><br>
+  <p>Wir bieten Full-Service-Catering für jede Veranstaltung, ob groß oder klein. Wir verstehen Ihre Bedürfnisse und sorgen dafür, dass die Speisen den höchsten Kriterien von allen gerecht werden, sowohl hinsichtlich des Aussehens als auch des Geschmacks. Zögern Sie nicht, uns zu kontaktieren.</p>
+  <p class="w3-text-blue-grey w3-large"><b>Schulstraße 14, 70839 Gerlingen</b></p>
+  <p>Sie können uns auch telefonisch unter <span style="font-size: large; font-weight: bold;">+49 7156 4377201</span> erreichen oder uns hier eine Nachricht senden:</p>
+  <form>
+    <div>
+      
+      <iframe id="contactform" name="contactform" src="https://docs.google.com/forms/d/e/1FAIpQLScz35ROibH4szdJpQJlNUs7yKflxmJ-CUieFZM7oiqWzu00kA/viewform?embedded=true" width="1050" height="856" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+    </div>
+  </form>
+</div>
+
+
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>&copy; 2023 Jimmy's Burger.</p>
+</footer>
+
+
+<script src="index.js"></script>
+</body>
+</html>
